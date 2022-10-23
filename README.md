@@ -1,3 +1,52 @@
+
+# TESLA-CLONE
+This is a cloned website of the [official tesla](https://www.tesla.com/) page built with react js. 
+The page has simillar sections which made it a lot easier to builed reusable components with react. 
+Click [here](https://teslacarsclone.netlify.app/) to view the cloned version of the official Tesla page.
+It is not exactly the same but quite similar.
+
+<p align="center">
+  <img src="public/transparentBanner.png" width="50%"/>
+</p>
+
+<br>
+
+
+##
+
+<p align="center">
+  <a href="#project-star2">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#techs-rocket">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#installation-wrench">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contributing-">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license-memo">License</a>
+</p>
+
+<br>
+
+## Project :star2:
+
+This project was part of an UI Clone challenge, the idea was to replicate Tesla homepage using ReactJS and framer-motion, the last one intended to mimic Tesla's animations when scrolling through the page sections.
+
+Deployed [here](https://tesla-clone-eta.vercel.app/).
+
+<br>
+
+<p align="center">
+  <img src="public/tesla-1.gif"/>
+</p>
+
+
+## Techs :rocket:
+
+- [x] [ReactJS](https://reactjs.org);
+- [x] [Javascript](https://www.javascript.com/);
+- [x] [Styled Components](https://styled-components.com/).
+- [x] Tailwind
+
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
