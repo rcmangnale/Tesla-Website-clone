@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { selectCars } from "../features/carSlice";
 import { useSelector } from "react-redux";
@@ -7,7 +6,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-function Header() {
+export default function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
   const cars = useSelector(selectCars);
   const [open, setOpen] = useState(false);
@@ -198,5 +197,3 @@ const CustomClose = styled(CloseIcon)`
   cursor: pointer;
   margin-right: 10px;
 `;
-
-export default Header;

@@ -11,45 +11,35 @@ export default function Section({
   showDownArrow,
 }) {
   return (
-    <Wrap bgImage={backgroundImage}>
+    <Main className="flex flex-col items-center justify-between bg-center bg-no-repeat bg-cover z-1" bgImage={backgroundImage}>
       <Fade bottom>
         <div className="text-center pt-36 ">
           <p className="text-5xl font-bold">{title}</p>
           <p className="py-2 text-lg text-black ">{description}</p>
         </div>
       </Fade>
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <Fade bottom>
-          <ButtonGroup>
+          <ButtonGroup className="flex gap-16 mb-16">
             <LeftButton>{leftButtonText}</LeftButton>
             {rightButtonText && <RightButton>{rightButtonText}</RightButton>}
           </ButtonGroup>
         </Fade>
         {showDownArrow && <DownArrow src="/images/down-arrow.svg"></DownArrow>}
       </div>
-    </Wrap>
+    </Main>
   );
 }
 
-const Wrap = styled.div`
+const Main = styled.div`
   width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   scroll-snap-align: start;
   z-index: 1;
 `;
 
 const ButtonGroup = styled.div`
-  display: flex;
-  margin-bottom: 48px;
-  gap: 25px;
   @media (max-width: 768px) {
     flex-direction: column;
   }
