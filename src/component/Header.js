@@ -30,8 +30,8 @@ export default function Header() {
             ))}
         </Menu>
         <div className="flex items-center gap-6 mr-10 font-semibold uppercase">
-          <a href="/">Shop</a>
-          <a href="/">Account</a>
+          <a className="invisible md:visible" href="/">Shop</a>
+          <a className="invisible md:visible" href="/">Account</a>
           <button
             onClick={viewMenuButtonClicked}
             className="text-lg font-bold text-black h w-30"
